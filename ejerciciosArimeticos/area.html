@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area de un rectangulo</title>
+    <link rel="stylesheet" href="../css/area.css">
+</head>
+
+<body>
+    <h2 align="center">Calcular el area de un retangulo</h2>
+    <div class="contenedor">
+        <form method="post" class="formulario" id="formulario">
+            <div class="base">
+                <label for="base">Base: </label>
+                <input type="number" step="any" name="base" id="base" required>
+            </div>
+
+            <div class="altura">
+                <label for="altura">Altura: </label>
+                <input type="number" step="any" name="altura" id="altura" required>
+            </div>
+
+            <button type="submit" id="calcular" class="calcular">Calcular</button>
+
+        </form>
+
+        <div class="resultado-div" id="resultado">
+            <p id="resultado">Resultado</p>
+        </div>
+        <!-- <p id="resultado:"></p> -->
+    </div>
+    <script src="js/area.js"></script>
+
+</body>
+
+</html>

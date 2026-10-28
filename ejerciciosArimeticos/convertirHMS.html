@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seg_totales</title>
+    <link rel="stylesheet" href="../css/convertirHMS.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <h2 class="convertir_title">
+            Convertir Horas, M y S a S totales
+        </h2>
+        <form method="post" class="formulario" id="formulario">
+            <div class="horas">
+                <label for="horas">Valor en horas</label>
+                <input type="number" name="horas" id="horas" required>
+            </div>
+
+            <div class="minutos">
+                <label for="minutos">Valor en minutos</label>
+                <input type="number" name="minutos" id="minutos" required>
+            </div>
+
+            <div class="segundos">
+                <label for="segundos">Valor en segundos</label>
+                <input type="number" name="segundos" id="segundos" required>
+            </div>
+
+            <button type="submit" class="btn_calcular">Calcular</button>
+        </form>
+
+        <div class="resultado_div">
+            <p class="resultado_label" id="resultado">El resultado es:</p>
+        </div>
+
+    </div>
+
+    <script src="js/convertirHMS.js"></script>
+
+</body>
+
+</html>
