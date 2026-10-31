@@ -5,34 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area de un rectangulo</title>
-    <link rel="stylesheet" href="../css/area.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
-    <h2 align="center">Calcular el area de un retangulo</h2>
     <div class="contenedor">
         <form method="post" class="formulario" id="formulario">
-            <div class="base">
-                <label for="base">Base: </label>
-                <input type="number" step="any" name="base" id="base" required>
-            </div>
+            <fieldset>
+                <legend>Área del Rectángulo</legend>
 
-            <div class="altura">
-                <label for="altura">Altura: </label>
-                <input type="number" step="any" name="altura" id="altura" required>
-            </div>
+                <div class="campos base">
+                    <label for="base">Base: </label>
+                    <input type="number" step="any" name="base" id="base" required>
+                </div>
 
-            <button type="submit" id="calcular" class="calcular">Calcular</button>
+                <div class="campos altura">
+                    <label for="altura">Altura: </label>
+                    <input type="number" step="any" name="altura" id="altura" required>
+                </div>
 
+                <button type="submit" id="calcular" class="calcular">Calcular</button>
+
+                <!-- El id "resultado" se queda solo en el div, y el span recibe "textoResultado" -->
+                <div class="resultado-div" id="resultado">
+                    <p>El resultado es: <span id="textoResultado"></span></p>
+                </div>
+
+            </fieldset>
         </form>
-
-        <div class="resultado-div" id="resultado">
-            <p id="resultado">Resultado</p>
-        </div>
-        <!-- <p id="resultado:"></p> -->
     </div>
-    <script src="js/area.js"></script>
 
+    <script src="js/area.js"></script>
 </body>
 
 </html>
