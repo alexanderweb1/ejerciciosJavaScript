@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipotenusa</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <form class="formulario" id="formulario">
+            <fieldset>
+                <legend>Calcular hipotenusa</legend>
+                <div class="campos">
+                    <label for="cateto1">Primer cateto</label>
+                    <input type="number" step="any" id="cateto1" name="cateto1">
+                </div>
+                <div class="campos">
+                    <label for="cateto2">Segundo cateto</label>
+                    <input type="number" step="any" id="cateto2" name="cateto2">
+                </div>
+
+                <button type="submit" class="btn_calcular">Calcular</button>
+
+                <div class="resultado-div">
+                    <p>El resultado es: <span id="textoResultado"></span></p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="js/hipotenusa.js"></script>
+
+</body>
+
+</html>
